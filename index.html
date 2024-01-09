@@ -4,10 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Automatic Image Slider</title>
 </head>
 <body>
+    <section id="slider-one">
+        <div class="images-container">
+            <div class="image1 fade">
+                <img src="./images/hotel2.jpg" alt="hotel">
+            </div>
+            <div class="image1 fade">
+                <img src="./images/hotel3.jpg" alt="hotel">
+            </div>
+            <div class="image1 fade">
+                <img src="./images/hotel4.jpg" alt="hotel">
+            </div>
+            <div class="image1 fade">
+                <img src="./images/hotel5.jpg" alt="hotel">
+            </div>
+            <div class="arrows">
+                <div class="arrow ">
+                    <i class='bx bx-chevron-left' onclick="plusSlides(-1)"></i>
+                </div>
+                <div class="arrow">
+                    <i class='bx bx-chevron-right' onclick="plusSlides(1)"></i>
+                </div>
+            </div>
+        </div>
+        <div class="dots1">
+            <span class="dot1" onclick="currentSlide(1)"></span>
+            <span class="dot1" onclick="currentSlide(2)"></span>
+            <span class="dot1" onclick="currentSlide(3)"></span>
+            <span class="dot1" onclick="currentSlide(4)"></span>
+        </div>
+    </section>
 
-<script src="./app.js"></script>
+    <section id="slider-two">
+        <div class="images-container">
+            <div class="image2 fade">
+                <img src="./images/hotel2.jpg" alt="hotel">
+            </div>
+            <div class="image2 fade">
+                <img src="./images/hotel3.jpg" alt="hotel">
+            </div>
+            <div class="image2 fade">
+                <img src="./images/hotel4.jpg" alt="hotel">
+            </div>
+            <div class="image2 fade">
+                <img src="./images/hotel5.jpg" alt="hotel">
+            </div>
+            <div class="dots2">
+                <span class="dot2"></span>
+                <span class="dot2"></span>
+                <span class="dot2"></span>
+                <span class="dot2"></span>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./app.js"></script>
 </body>
 </html>
